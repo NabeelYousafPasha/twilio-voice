@@ -1,5 +1,7 @@
 <?php
 
+use App\Jobs\Webhooks\ProcessWebhookTwilioApp1Job;
+
 return [
     'configs' => [
         [
@@ -59,7 +61,7 @@ return [
              *
              * This should be set to a class that extends \Spatie\WebhookClient\Jobs\ProcessWebhookJob.
              */
-            'process_webhook_job' => '',
+            'process_webhook_job' => ProcessWebhookTwilioApp1Job::class,
         ],
     ],
 
