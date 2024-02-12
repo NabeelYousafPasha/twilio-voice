@@ -20,3 +20,5 @@ Route::get('/', function () {
 
 Route::view('/init-call', 'call');
 Route::post('/call', [VoiceController::class, 'initiateCall'])->name('initiate_call');
+
+Route::webhooks('receiving-url-for-twilio-app-1', 'webhook-sending-twilio-app-1');
